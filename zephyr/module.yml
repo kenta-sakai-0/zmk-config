@@ -1,3 +1,7 @@
+# Delete all unused properties.
+
+# Give your module a name
+name: zmk-keyboard-corne-min
 build:
   settings:
     board_root: .
