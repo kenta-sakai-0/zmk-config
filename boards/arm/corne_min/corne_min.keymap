@@ -67,15 +67,15 @@
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P   | BSPC |
 // | CTRL | GA  | AS  | CD  | SF  |  G  |   |  H  | SJ   | CK  | AL  | GQ'  | SEMI |
 // | SHFT |  Z  | CX  | CC  | CV  |  B  |   |  N  |  M   |  ,  |  .  |  /   | ESC  |
-//                    | -/_ |SPC/NAV| TAB |   |ENT/SYM|BSPC/NUM|DEL/FUN|
+//                    | ESC |SPC/NAV| TAB |   |ENT/SYM|BSPC/NUM|DEL/FUN|
 // GA/AS/CD/SF/SJ/CK/AL/GQ = home row mods (GUI/ALT/CTRL/SHIFT tap-hold)
 // CX/CC/CV = tap X/C/V, hold Ctrl+X/C/V (ported from Aurora Lily's copy/cut/paste keys)
 // SPC/NAV, ENT/SYM, BSPC/NUM, DEL/FUN = tap for the plain key, hold for that layer
                         bindings = <
    &kp TAB   &kp Q          &kp W          &kp E          &kp R          &kp T       &kp Y  &kp U            &kp I            &kp O          &kp P            &kp BSPC
    &kp LCTRL &hm LGUI A     &hm LALT S     &hm LCTRL D    &hm LSHFT F    &kp G       &kp H  &hm RSHFT J      &hm RCTRL K      &hm RALT L     &hm RGUI SQT     &kp SEMI
-   &kp LSHFT &kp Z          &hm LCTRL X    &hm LCTRL C    &hm LCTRL V    &kp B       &kp N  &kp M            &kp COMMA        &kp DOT        &kp FSLH         &kp ESC
-                                           &kp MINUS      &ltb 1 SPACE   &kp TAB     &ltb 3 RET  &ltb 2 BSPC  &ltb 4 DEL
+   &kp LSHFT &kp Z          &hm LC(X) X    &hm LC(C) C    &hm LC(V) V    &kp B       &kp N  &kp M            &kp COMMA        &kp DOT        &kp FSLH         &kp ESC
+                                           &kp ESC        &ltb 1 SPACE   &kp TAB     &ltb 3 RET  &ltb 2 BSPC  &ltb 4 DEL
                         >;
                 };
 
